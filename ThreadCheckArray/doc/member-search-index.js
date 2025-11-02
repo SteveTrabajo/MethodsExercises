@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-memberSearchIndex = [{"p":"<Unnamed>","c":"ThreadCheckArray","l":"run()"},{"p":"<Unnamed>","c":"ThreadCheckArray","l":"ThreadCheckArray(SharedData)","u":"%3Cinit%3E(SharedData)"}];updateSearchResults();
-=======
-memberSearchIndex = [{"p":"<Unnamed>","c":"TestThreadCheckArray","l":"main(String[])","u":"main(java.lang.String[])"},{"p":"<Unnamed>","c":"TestThreadCheckArray","l":"TestThreadCheckArray()","u":"%3Cinit%3E()"}];updateSearchResults();
->>>>>>> branch 'master' of https://github.com/SteveTrabajo/MethodsExercises.git
+memberSearchIndex = [{"p":"<Unnamed>","c":"SharedData","l":"getArray()"},{"p":"<Unnamed>","c":"SharedData","l":"getB()"},{"p":"<Unnamed>","c":"SharedData","l":"getFlag()"},{"p":"<Unnamed>","c":"SharedData","l":"getWinArray()"},{"p":"<Unnamed>","c":"SharedData","l":"setFlag(boolean)"},{"p":"<Unnamed>","c":"SharedData","l":"setWinArray(boolean[])"},{"p":"<Unnamed>","c":"SharedData","l":"SharedData(ArrayList<Integer>, int)","u":"%3Cinit%3E(java.util.ArrayList,int)"}];updateSearchResults();
