@@ -1,5 +1,6 @@
 import java.util.ArrayList;
-
+/** 
+ * Runnable that checks if a sub array can reach the target number*/
 public class ThreadCheckArray implements Runnable 
 {
 	private boolean flag;
@@ -10,8 +11,9 @@ public class ThreadCheckArray implements Runnable
 	
 	public ThreadCheckArray(SharedData sd) 
 	{
+		// constructor
 		this.sd = sd;	
-		synchronized (sd) 
+		synchronized (sd)
 		{
 			array = sd.getArray();
 			b = sd.getB();
@@ -19,8 +21,14 @@ public class ThreadCheckArray implements Runnable
 		winArray = new boolean[array.size()];
 	}
 	
+	/** recursively checks if a sub array can reach the target sum
+	 * 
+	 * @param n elements
+	 * @param b target sum
+	 */
 	void rec(int n, int b)
 	{
+		// recursive method
 		synchronized (sd) 
 		{
 			if (sd.getFlag())
@@ -51,8 +59,11 @@ public class ThreadCheckArray implements Runnable
 		}	
 		rec(n-1, b);
 	}
-
+	/**
+	 * Executed the check for this thread
+	 */
 	public void run() {
+		//main thread logic
 		if (array.size() != 1)
 			if (Thread.currentThread().getName().equals("thread1"))
 				rec(array.size()-1, b - array.get(array.size() - 1));
